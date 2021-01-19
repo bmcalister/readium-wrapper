@@ -3,7 +3,7 @@
 
 target 'ReadiumWrapper' do
   # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
+  use_modular_headers!
 
   pod 'CryptoSwift', :git => 'https://github.com/krzyzanowskim/CryptoSwift.git', :tag => '1.3.2'
   pod 'ZIPFoundation', :git => 'https://github.com/weichsel/ZIPFoundation.git', :tag => '0.9.11'

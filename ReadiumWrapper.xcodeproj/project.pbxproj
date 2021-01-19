@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		99BB24DB1A3AF460ABA0081A /* Pods_ReadiumWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B956A41AE6EF57EA8B590B /* Pods_ReadiumWrapper.framework */; };
-		BF6A2CCB6117A613B2D58323 /* Pods_ReadiumWrapper_ReadiumWrapperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2847BC2BDA23B3493EE643 /* Pods_ReadiumWrapper_ReadiumWrapperTests.framework */; };
 		E214F16625B70B0900D330D4 /* ReadiumWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E214F15C25B70B0900D330D4 /* ReadiumWrapper.framework */; };
 		E214F16B25B70B0900D330D4 /* ReadiumWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E214F16A25B70B0900D330D4 /* ReadiumWrapperTests.swift */; };
 		E214F16D25B70B0900D330D4 /* ReadiumWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = E214F15F25B70B0900D330D4 /* ReadiumWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -103,12 +101,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		087DD273B6C95296EFB3D819 /* Pods-ReadiumWrapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadiumWrapper.debug.xcconfig"; path = "Target Support Files/Pods-ReadiumWrapper/Pods-ReadiumWrapper.debug.xcconfig"; sourceTree = "<group>"; };
-		0B06E7CF80CA0B2A9ACE55FD /* Pods-ReadiumWrapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadiumWrapper.release.xcconfig"; path = "Target Support Files/Pods-ReadiumWrapper/Pods-ReadiumWrapper.release.xcconfig"; sourceTree = "<group>"; };
-		1D2847BC2BDA23B3493EE643 /* Pods_ReadiumWrapper_ReadiumWrapperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReadiumWrapper_ReadiumWrapperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3340452DEAA5DBBB0E8F9146 /* Pods-ReadiumWrapper-ReadiumWrapperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadiumWrapper-ReadiumWrapperTests.debug.xcconfig"; path = "Target Support Files/Pods-ReadiumWrapper-ReadiumWrapperTests/Pods-ReadiumWrapper-ReadiumWrapperTests.debug.xcconfig"; sourceTree = "<group>"; };
-		6A24AD524CCC04E87DEB56EE /* Pods-ReadiumWrapper-ReadiumWrapperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadiumWrapper-ReadiumWrapperTests.release.xcconfig"; path = "Target Support Files/Pods-ReadiumWrapper-ReadiumWrapperTests/Pods-ReadiumWrapper-ReadiumWrapperTests.release.xcconfig"; sourceTree = "<group>"; };
-		99B956A41AE6EF57EA8B590B /* Pods_ReadiumWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReadiumWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E214F15C25B70B0900D330D4 /* ReadiumWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReadiumWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E214F15F25B70B0900D330D4 /* ReadiumWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadiumWrapper.h; sourceTree = "<group>"; };
 		E214F16025B70B0900D330D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -200,7 +192,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99BB24DB1A3AF460ABA0081A /* Pods_ReadiumWrapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,42 +200,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				E214F16625B70B0900D330D4 /* ReadiumWrapper.framework in Frameworks */,
-				BF6A2CCB6117A613B2D58323 /* Pods_ReadiumWrapper_ReadiumWrapperTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		373E74BE3FFBAEC1906A9ABC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				99B956A41AE6EF57EA8B590B /* Pods_ReadiumWrapper.framework */,
-				1D2847BC2BDA23B3493EE643 /* Pods_ReadiumWrapper_ReadiumWrapperTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		3DB6624DF800778CD7550D72 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				087DD273B6C95296EFB3D819 /* Pods-ReadiumWrapper.debug.xcconfig */,
-				0B06E7CF80CA0B2A9ACE55FD /* Pods-ReadiumWrapper.release.xcconfig */,
-				3340452DEAA5DBBB0E8F9146 /* Pods-ReadiumWrapper-ReadiumWrapperTests.debug.xcconfig */,
-				6A24AD524CCC04E87DEB56EE /* Pods-ReadiumWrapper-ReadiumWrapperTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		E214F15225B70B0900D330D4 = {
 			isa = PBXGroup;
 			children = (
 				E214F15E25B70B0900D330D4 /* ReadiumWrapper */,
 				E214F16925B70B0900D330D4 /* ReadiumWrapperTests */,
 				E214F15D25B70B0900D330D4 /* Products */,
-				3DB6624DF800778CD7550D72 /* Pods */,
-				373E74BE3FFBAEC1906A9ABC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -539,7 +506,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E214F17025B70B0900D330D4 /* Build configuration list for PBXNativeTarget "ReadiumWrapper" */;
 			buildPhases = (
-				2B5166ED9F5FDDB9D5872221 /* [CP] Check Pods Manifest.lock */,
 				E214F15725B70B0900D330D4 /* Headers */,
 				E214F15825B70B0900D330D4 /* Sources */,
 				E214F15925B70B0900D330D4 /* Frameworks */,
@@ -558,11 +524,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E214F17325B70B0900D330D4 /* Build configuration list for PBXNativeTarget "ReadiumWrapperTests" */;
 			buildPhases = (
-				E3430119799C85D7BE8854E1 /* [CP] Check Pods Manifest.lock */,
 				E214F16125B70B0900D330D4 /* Sources */,
 				E214F16225B70B0900D330D4 /* Frameworks */,
 				E214F16325B70B0900D330D4 /* Resources */,
-				445B932F9E092852946452BE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -647,70 +611,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2B5166ED9F5FDDB9D5872221 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ReadiumWrapper-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		445B932F9E092852946452BE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReadiumWrapper-ReadiumWrapperTests/Pods-ReadiumWrapper-ReadiumWrapperTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReadiumWrapper-ReadiumWrapperTests/Pods-ReadiumWrapper-ReadiumWrapperTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReadiumWrapper-ReadiumWrapperTests/Pods-ReadiumWrapper-ReadiumWrapperTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E3430119799C85D7BE8854E1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ReadiumWrapper-ReadiumWrapperTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E214F15825B70B0900D330D4 /* Sources */ = {
@@ -1011,7 +911,6 @@
 		};
 		E214F17125B70B0900D330D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 087DD273B6C95296EFB3D819 /* Pods-ReadiumWrapper.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -1036,7 +935,6 @@
 		};
 		E214F17225B70B0900D330D4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B06E7CF80CA0B2A9ACE55FD /* Pods-ReadiumWrapper.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -1061,7 +959,6 @@
 		};
 		E214F17425B70B0900D330D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3340452DEAA5DBBB0E8F9146 /* Pods-ReadiumWrapper-ReadiumWrapperTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1081,7 +978,6 @@
 		};
 		E214F17525B70B0900D330D4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A24AD524CCC04E87DEB56EE /* Pods-ReadiumWrapper-ReadiumWrapperTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
