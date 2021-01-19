@@ -1,0 +1,11 @@
+{
+  "commitish" : "2.0.0-beta.1",
+  "iOS" : [
+    {
+      "hash" : "7aab5c007bad16b5b1f0eb6ecdc25ec6911da5f844e5181898d07f69f6688c9a",
+      "name" : "R2Shared",
+      "linking" : "dynamic",
+      "swiftToolchainVersion" : "5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+    }
+  ]
+}
