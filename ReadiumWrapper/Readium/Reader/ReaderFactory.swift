@@ -18,8 +18,8 @@ import R2Shared
 final class ReaderFactory {
     
     final class Storyboards {
-        let outline = UIStoryboard(name: "Outline", bundle: nil)
-        let drm = UIStoryboard(name: "DRM", bundle: nil)
+        let outline = UIStoryboard(name: "Outline", bundle: Bundle.main)
+        let drm = UIStoryboard(name: "DRM", bundle: Bundle.main)
     }
     
     let storyboards = Storyboards()

@@ -17,7 +17,7 @@ import R2Shared
 
 final class LibraryFactory {
     
-    fileprivate let storyboard = UIStoryboard(name: "Library", bundle: nil)
+    fileprivate let storyboard = UIStoryboard(name: "Library", bundle: Bundle.main)
     fileprivate let libraryService: LibraryService
 
     init(libraryService: LibraryService) {

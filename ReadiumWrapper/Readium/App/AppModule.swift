@@ -51,7 +51,7 @@ final class AppModule {
     }
     
     private(set) lazy var aboutViewController: UIViewController = {
-        let storyboard = UIStoryboard(name: "App", bundle: nil)
+        let storyboard = UIStoryboard(name: "App", bundle: Bundle.main)
         let aboutViewController = storyboard.instantiateViewController(withIdentifier: "AboutTableViewController") as! AboutTableViewController
         return UINavigationController(rootViewController: aboutViewController)
     }()

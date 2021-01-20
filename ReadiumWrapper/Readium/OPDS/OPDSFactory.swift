@@ -20,7 +20,7 @@ final class OPDSFactory {
     static let shared = OPDSFactory()
     
     weak var delegate: OPDSModuleDelegate?
-    fileprivate let storyboard = UIStoryboard(name: "OPDS", bundle: nil)
+    fileprivate let storyboard = UIStoryboard(name: "OPDS", bundle: Bundle.main)
     
 }
 

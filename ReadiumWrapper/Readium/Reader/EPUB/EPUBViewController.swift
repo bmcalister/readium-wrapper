@@ -22,7 +22,7 @@ class EPUBViewController: ReaderViewController {
     init(publication: Publication, book: Book, resourcesServer: ResourcesServer) {
         let navigator = EPUBNavigatorViewController(publication: publication, initialLocation: book.progressionLocator, resourcesServer: resourcesServer)
 
-        let settingsStoryboard = UIStoryboard(name: "UserSettings", bundle: nil)
+        let settingsStoryboard = UIStoryboard(name: "UserSettings", bundle: Bundle.main)
         userSettingNavigationController = settingsStoryboard.instantiateViewController(withIdentifier: "UserSettingsNavigationController") as! UserSettingsNavigationController
         userSettingNavigationController.fontSelectionViewController =
             (settingsStoryboard.instantiateViewController(withIdentifier: "FontSelectionViewController") as! FontSelectionViewController)
