@@ -81,8 +81,8 @@ class EPUBViewController: ReaderViewController {
         var buttons = super.makeNavigationBarButtons()
 
         // User configuration button
-        let settingsIcon = UIImage(named: "settingsIcon", in: Bundle.init(for: ReaderViewController.self), compatibleWith: nil)
-        let userSettingsButton = settingsIcon, style: .plain, target: self, action: #selector(presentUserSettings))
+        let settingsIcon = UIImage(named: "settingsIcon", in: Bundle.init(for: ReadiumWrapper.self), compatibleWith: nil)
+        let userSettingsButton = UIBarButtonItem(image: settingsIcon, style: .plain, target: self, action: #selector(presentUserSettings))
         buttons.insert(userSettingsButton, at: 1)
         popoverUserconfigurationAnchor = userSettingsButton
 

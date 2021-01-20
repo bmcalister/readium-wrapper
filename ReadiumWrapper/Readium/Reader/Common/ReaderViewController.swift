@@ -115,15 +115,15 @@ class ReaderViewController: UIViewController, Loggable {
     func makeNavigationBarButtons() -> [UIBarButtonItem] {
         var buttons: [UIBarButtonItem] = []
         // Table of Contents
-        let menuIcon = UIImage(named: "menuIcon", in: Bundle.init(for: ReaderViewController.self), compatibleWith: nil)
+        let menuIcon = UIImage(named: "menuIcon", in: Bundle.init(for: ReadiumWrapper.self), compatibleWith: nil)
         buttons.append(UIBarButtonItem(image: menuIcon, style: .plain, target: self, action: #selector(presentOutline)))
         // DRM management
         if publication.isProtected {
-            let drm = UIImage(named: "drm", in: Bundle.init(for: ReaderViewController.self), compatibleWith: nil)
+            let drm = UIImage(named: "drm", in: Bundle.init(for: ReadiumWrapper.self), compatibleWith: nil)
             buttons.append(UIBarButtonItem(image: drm, style: .plain, target: self, action: #selector(presentDRMManagement)))
         }
         // Bookmarks
-        let bookmark = UIImage(named: "bookmark", in: Bundle.init(for: ReaderViewController.self), compatibleWith: nil)
+        let bookmark = UIImage(named: "bookmark", in: Bundle.init(for: ReadiumWrapper.self), compatibleWith: nil)
         buttons.append(UIBarButtonItem(image: bookmark, style: .plain, target: self, action: #selector(bookmarkCurrentPosition)))
         
         return buttons
