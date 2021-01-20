@@ -20,7 +20,7 @@ public class ReadiumWrapper: ReaderFormatModuleDelegate {
         contentProtections: []
     )
     
-    init(darkMode: Bool? = false) {
+    public init(darkMode: Bool? = false) {
         guard let s = PublicationServer() else {
             print("Could not start publication server...")
             return
