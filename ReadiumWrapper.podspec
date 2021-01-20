@@ -33,7 +33,7 @@ Pod::Spec.new do |spec|
     # spec.dependency  'R2Navigator', '2.0.0-beta.1'
     # spec.dependency  'ReadiumOPDS', '2.0.0-beta.1'
 
-    spec.preserve_paths = 'Frameworks/Build/iOS/*'
+    spec.preserve_paths = 'Frameworks/Build/iOS/*.framework'
     spec.vendored_frameworks = 'Frameworks/Build/iOS/CryptoSwift.framework','Frameworks/Build/iOS/Fuzi.framework','Frameworks/Build/iOS/GCDWebServer.framework','Frameworks/Build/iOS/Kingfisher.framework','Frameworks/Build/iOS/KingfisherSwiftUI.framework','Frameworks/Build/iOS/MBProgressHUD.framework','Frameworks/Build/iOS/Minizip.framework','Frameworks/Build/iOS/R2Navigator.framework','Frameworks/Build/iOS/R2Shared.framework','Frameworks/Build/iOS/R2Streamer.framework','Frameworks/Build/iOS/ReadiumOPDS.framework','Frameworks/Build/iOS/SQLite.framework','Frameworks/Build/iOS/SwiftSoup.framework','Frameworks/Build/iOS/ZIPFoundation.framework'
     spec.ios.frameworks = 'CoreServices', 'SystemConfiguration'
   end
