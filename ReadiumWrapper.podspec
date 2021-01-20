@@ -1,26 +1,18 @@
 Pod::Spec.new do |spec|
 
     spec.name         = "ReadiumWrapper"
-    spec.version      = "0.0.1"
+    spec.version      = "1.0.0"
     spec.summary      = "A simple wrapper for Readium"
-  
     spec.homepage     = "https://github.com/bmcalister/readium-wrapper"
-  
     spec.license      = 'BSD 3-Clause License'
-  
     spec.author       = { "Brian Mc Alister" => "brian@mca.io" }
-  
     spec.source       = { :git => "https://github.com/bmcalister/readium-wrapper.git", :tag => "#{spec.version}" }
-  
     spec.platform     = :ios
-  
-    spec.source_files  = "ReadiumWrapper/**/*.{swift, plist, .h, .m}"
+    spec.source_files  = ["ReadiumWrapper/**/*.{swift, plist, .h, .m}"]
     spec.exclude_files = ["**/Info*.plist"]
-    spec.resources = ['ReadiumWrapper/**/*.{png,jpeg,jpg,storyboard,xib,xcassets,json}', 'Pods/']
-  
+    spec.resources = ['ReadiumWrapper/**/*.{png,jpeg,jpg,storyboard,xib,xcassets,json}']
     spec.ios.deployment_target = "10.0"
-    spec.swift_version = "5.0"
-  
+    spec.swift_version = "5"
     spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
     spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
@@ -41,7 +33,7 @@ Pod::Spec.new do |spec|
     # spec.dependency  'R2Navigator', '2.0.0-beta.1'
     # spec.dependency  'ReadiumOPDS', '2.0.0-beta.1'
 
-    # spec.xcconfig = { '   ' => '-framework CryptoSwift, -framework Fuzi, -framework GCDWebServer, -framework Kingfisher, -framework KingfisherSwiftUI, -framework MBProgressHUD, -framework Minizip, -framework R2Navigator, -framework R2Shared, -framework R2Streamer, -framework ReadiumOPDS, -framework SQLite, -framework SwiftSoup, -framework ZIPFoundation' }
+    spec.preserve_paths = 'Frameworks/Build/iOS/*'
     spec.vendored_frameworks = 'Frameworks/Build/iOS/CryptoSwift.framework','Frameworks/Build/iOS/Fuzi.framework','Frameworks/Build/iOS/GCDWebServer.framework','Frameworks/Build/iOS/Kingfisher.framework','Frameworks/Build/iOS/KingfisherSwiftUI.framework','Frameworks/Build/iOS/MBProgressHUD.framework','Frameworks/Build/iOS/Minizip.framework','Frameworks/Build/iOS/R2Navigator.framework','Frameworks/Build/iOS/R2Shared.framework','Frameworks/Build/iOS/R2Streamer.framework','Frameworks/Build/iOS/ReadiumOPDS.framework','Frameworks/Build/iOS/SQLite.framework','Frameworks/Build/iOS/SwiftSoup.framework','Frameworks/Build/iOS/ZIPFoundation.framework'
     spec.ios.frameworks = 'CoreServices', 'SystemConfiguration'
   end
