@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
     spec.name         = "ReadiumWrapper"
-    spec.version      = "0.1.1"
+    spec.version      = "0.1.2"
     spec.summary      = "A simple wrapper for Readium"
     spec.homepage     = "https://github.com/bmcalister/readium-wrapper"
     spec.license      = 'BSD 3-Clause License'

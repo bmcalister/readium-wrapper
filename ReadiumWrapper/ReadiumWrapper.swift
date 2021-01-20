@@ -136,7 +136,7 @@ public class ReadiumWrapper: ReaderFormatModuleDelegate {
     }
     
     func make(publication: Publication) -> OutlineTableViewController {
-        let storyboard = UIStoryboard(name: "Outline", bundle: Bundle.main)
+        let storyboard = UIStoryboard(name: "Outline", bundle: Bundle(for: ReadiumWrapper.self))
         let controller = storyboard.instantiateViewController(withIdentifier: "OutlineTableViewController") as! OutlineTableViewController
         controller.publication = publication
         return controller

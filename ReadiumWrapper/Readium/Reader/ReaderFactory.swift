@@ -18,8 +18,8 @@ import R2Shared
 final class ReaderFactory {
     
     final class Storyboards {
-        let outline = UIStoryboard(name: "Outline", bundle: Bundle.main)
-        let drm = UIStoryboard(name: "DRM", bundle: Bundle.main)
+        let outline = UIStoryboard(name: "Outline", bundle: Bundle(for: ReadiumWrapper.self))
+        let drm = UIStoryboard(name: "DRM", bundle: Bundle(for: ReadiumWrapper.self))
     }
     
     let storyboards = Storyboards()
